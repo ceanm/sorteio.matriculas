@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Adventistas';
+  src: url('../fonts/Adventista-Regular.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+
+    transition: 0.2s;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    /* background-color: #f8fafc; */
+    background: url('../img/papel\ de\ parede\ matriculas.png') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+    color: #0f172a;
+
+    height: 100vh;
+    
+    padding: 2rem;
+}
+
+header.school-banner {
+    /* position: relative; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffffe6;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.1), 0 8px 10px -6px rgba(2, 132, 199, 0.1);
+
+    width: 900px;
+    
+    padding: 1rem 5rem;
+}
+
+header.school-banner .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.school-banner .banner-content img.school-logo {
+    width: 60px;
+
+    padding-right: 0.5rem;
+}
+
+header.school-banner .banner-content .nameCEANM {
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    border-left: 3px solid #003366;
+
+    padding-left: 0.5rem;
+
+    height: 60px;
+
+}
+
+header.school-banner .banner-content .nameCEANM p.colegio {
+
+    color: #036;
+
+    font-size: 1.5rem;
+    font-family: 'Adventistas';
+}
+
+header.school-banner .banner-content .nameCEANM p.name {
+
+    color: #036;
+    
+    font-size: 1.5rem;
+    font-family: 'Adventistas';
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5rem;
+
+}
+
+header.school-banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    height: 60px;
+}
+
+header.school-banner  .banner-text .badge-year {
+    background-color: #facc15;
+    color: #003366;
+    
+    font-size: 1.3rem;
+    font-weight: 800;
+    
+    border-radius: 8px;
+    
+    letter-spacing: 5px;
+    
+    padding: 4px 12px;
+}
+
+header.school-banner  .banner-text p {
+    color: #003366;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 950px) {
+    header.school-banner {
+
+        width: 700px;
+
+        padding: 1rem 2rem;
+
+    }
+
+    header.school-banner .banner-content .nameCEANM p.colegio {
+
+        font-size: 1.3rem;
+
+    }
+
+    header.school-banner .banner-content .nameCEANM p.name {
+
+        font-size: 1.3rem;
+
+    }
+
+}
+
+@media (max-width: 750px) {
+    header.school-banner {
+
+        width: 500px;
+
+        padding: 1rem 2rem;
+
+    }
+
+    header.school-banner .banner-content .nameCEANM{
+
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 550px) {
+    header.school-banner {
+
+        width: 90vw;
+
+        padding: 0.8rem 1rem;
+
+    }
+
+    header.school-banner  .banner-text {
+        align-items: start;
+    }
+
+    header.school-banner  .banner-text .badge-year {
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    header.school-banner {
+
+        height: 97px;
+
+    }
+
+    header.school-banner  .banner-text .badge-year {
+        letter-spacing: 1.3px;
+    }
+
+    header.school-banner  .banner-text p {
+        font-size: 0.80rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    header.school-banner  .banner-text .badge-year {
+        letter-spacing: 0;
+    }
+
+    header.school-banner  .banner-text p {
+        display: none;
+    }
+
+}
